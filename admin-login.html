@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<title>Reimbursement</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+<style type="text/css">
+
+#myTab {
+    background:#ffffff;
+}
+#title1{
+    color: rgb(300,300,300);
+}
+
+h1  {
+    color: rgb(0,0,0);
+    font-family: palatino, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+</style>
+
+</head>
+<body style="background-color: black; "><div>
+
+
+
+<div class="container" style="width: 25%;margin-left: 100px;padding-top: 100px;">
+  
+  
+    <div class="well " id="myContent" style="background: #ffffff;border:2px #fefefe;">
+            <section>
+                <form method="POST"  id="user_form">
+                    <div class="form-group ">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" name="password" >
+                    </div>
+                       
+                        <button type="button" id="login-admin-button" class="btn btn-primary btn-block">Login</button>
+                </form><br>
+            </section>   
+         
+        </div>
+        
+        
+    </div>
+
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    
+    $("#login-admin-button").click(function(e) {
+        e.preventDefault();
+        var username = $("#username").val();
+        var password = $("#password").val();        
+       
+            $.ajax({
+                type: 'POST',
+                url: 'https://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/adminlogin/',
+                dataType: "json",
+                data:JSON.stringify ({
+                    'username':username,
+                    'password':password,
+                }),
+                success: function(msg, status, xhr) {
+                    console.log('msg,status,xhr',msg,status,xhr);
+                    var token=msg.token;
+                    var first_name=msg.data.first_name;
+                    localStorage.setItem('token', token);
+                    localStorage.setItem('first_name', first_name);
+                    window.location.href="index.html";
+                },
+                error: function(xhr,status,error){
+                    console.log(xhr+status+error);
+                }
+
+            });
+                                                          
+    });   
+                        
+    $("#password").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#login-user-button").click();
+    }
+    });  
+    
+          
+   
+});
+</script>
+</body>
+</html>

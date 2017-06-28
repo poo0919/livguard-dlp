@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html class=" ">
+    <head>
+        <!-- 
+         * @Package: Complete Admin - Responsive Theme
+         * @Subpackage: Bootstrap
+         * @Version: 2.2
+         * This file is part of Complete Admin Theme.
+        -->
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta charset="utf-8" />
+        <title>LivGuard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />    <!-- Favicon -->
+        <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-57-precomposed.png">	<!-- For iPhone -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114-precomposed.png">    <!-- For iPhone 4 Retina display -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72-precomposed.png">    <!-- For iPad -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144-precomposed.png">    <!-- For iPad Retina display -->
+
+
+
+
+        <!-- CORE CSS FRAMEWORK - START -->
+        <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css"/>
+        <!-- CORE CSS FRAMEWORK - END -->
+
+        <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START --> 
+        
+        
+<link href="assets/plugins/datatables/css/jquery.dataTables.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
+
+        <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END --> 
+
+
+        <!-- CORE CSS TEMPLATE - START -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+        <!-- CORE CSS TEMPLATE - END -->
+
+        <style type="text/css">
+            
+            td,th{
+                text-align: center;
+            }
+        </style>
+
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BEGIN BODY -->
+    <body class=" "><!-- START TOPBAR -->
+<div class='page-topbar '>
+    <div class='logo-area'>
+
+    </div>
+    <div class='quick-area'>
+        <div class='pull-left'>
+            <ul class="info-menu left-links list-inline list-unstyled">
+                <li class="sidebar-toggle-wrap">
+                    <a href="#" data-toggle="sidebar" class="sidebar_toggle">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>      
+        <div class='pull-right'>
+            <ul class="info-menu right-links list-inline list-unstyled">
+                <li class="profile">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                    <!--    <img src="../data/profile/profile.jpg" alt="user-image" class="img-circle img-inline"> -->
+                        <span id="adminFirstName"> <i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu profile animated fadeIn">
+                    <!--    <li>
+                            <a href="#settings">
+                                <i class="fa fa-wrench"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#profile">
+                                <i class="fa fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#help">
+                                <i class="fa fa-info"></i>
+                                Help
+                            </a>
+                        </li>  -->
+                        <li class="last">
+                            <a href="admin-login.html">
+                                <i class="fa fa-lock"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>           
+        </div>      
+    </div>
+
+</div>
+<!-- END TOPBAR -->
+<!-- START CONTAINER -->
+<div class="page-container row-fluid container-fluid">
+
+    <!-- SIDEBAR - START -->
+
+<div class="page-sidebar ">
+
+    <!-- MAIN MENU - START -->
+    <div class="page-sidebar-wrapper" id="main-menu-wrapper"> 
+        <ul class='wraplist'>   
+                    <li class="" style="padding-top: 40px;"> 
+                    <a href="home.html">
+                    <img src="assets/images/home.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 15px;"> Home</span>
+                        </a>
+                    </li>
+                    <li class="" > 
+                    <a href="dealers-purchase-records.html">
+                    <img src="assets/images/dealers-purchase-records.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 15px;"> Dealers & Purchase Records</span>
+                        </a>
+                    </li>
+                    <li class=""  >
+                    <a href="customer-product-warranty-list.html">
+                    <img src="assets/images/customer-product-warranty-list.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 14px;"> Customer & Product Warranty</span>
+                        </a>
+                    </li>
+                    <li class="" > 
+                    <a href="notifications.html">
+                    <img src="assets/images/notifications.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 15px;">Send Notifications</span>
+                        </a>
+                    </li>
+                    <li class="" > 
+                    <a href="loyalty-scheme.html">
+                    <img src="assets/images/loyalty-scheme.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 15px;"> Loyalty Scheme</span>
+                        </a>
+                    </li>
+                    <li class="open">
+                    <a href="application-chart.html">
+                    <img src="assets/images/application-chart.png" style="padding-left: 5px;">
+                    <span class="title" style="padding-left: 15px;"> Application Chart</span>
+                        </a>
+                    </li>
+        </ul>
+
+
+
+    </div>
+    <!-- MAIN MENU - END -->
+
+
+
+</div>
+<!--  SIDEBAR - END -->
+    <!-- START CONTENT -->
+<section id="main-content" class=" ">
+    <section class="wrapper main-wrapper row" style=''>
+    <div class="clearfix"></div>
+    <!-- MAIN CONTENT AREA STARTS -->
+    
+
+<div class="col-lg-12" >
+    <section class="box " >
+            <header class="panel_header">
+                <h2 class="title pull-left">Application Chart</h2>
+            </header>
+            <form enctype="multipart/form-data" id="importFrm" class="form-inline" style="float: right;padding-right: 32px;">
+                <div class="form-group" >
+                    <input type="file" name="file" id="file" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn" style="background-color: #EB5757;color:#ffffff;" name="appChartCSVimport" id="appChartCSVimport">CSV IMPORT</button>
+                </div>
+            </form><br>
+<br><br>            <a href="assets/data/sample_file.csv" type="button" style="float: right;padding-right: 32px;text-decoration: none;" value="Download" >Download Sample</a>
+            <div class="content-body">    <div class="row">
+        <div class="col-xs-12" >
+            <!-- ********************************************** -->
+            <div class="table-responsive" data-pattern="">
+            <select class="form-control" name="state" id="maxRows" style="width: 16% !important;">
+              <!-- <option value="5000">Show ALL Rows</option> -->
+              <option value="100">100</option>
+              <option value="200">200</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+              <option value="2000">2000</option>
+              
+            </select>
+
+                <table id="applicationChartTableData" class="display table table-bordered row">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>   
+                        <th>Vehicle Manufacturer</th>
+                        <th>Segment</th>
+                        <th>Vehicle Model</th>
+                        <th>Fuel </th>
+                        <th>Capacity Ah @C20</th>
+                        <th>Livguard Brand</th>
+                        <th>Livguard Battery Model</th>
+                        <th>Warranty in Months(Flat + Prorata)</th>
+                    </tr>
+                </thead>
+                <tbody >
+                <!--    <tr>
+                        <td>1.</td>
+                        <td>CHEVROLET</td>
+                        <td>CAR</td>
+                        <td>OPEL CORSA</td>
+                        <td>Petrol</td>
+                        <td>55</td>
+                        <td>Zing</td>
+                        <td>LGM HH DIN55</td>
+                        <td>24+24*</td>                   
+                    </tr>  -->
+               
+                   
+                </tbody>
+            </table>
+            <div class='pagination-container' >
+                <nav>
+                  <ul class="pagination">
+                   <!-- Here the JS Function Will Add the Rows -->
+                  </ul>
+                </nav>
+            </div>
+
+            </div>
+            <!-- ********************************************** --><br><br>
+         
+        </div>
+    </div>
+    </div>
+        </section></div>
+
+
+
+<!-- MAIN CONTENT AREA ENDS -->
+    </section>
+    </section>
+    <!-- END CONTENT -->
+    <div class="page-chatapi hideit">
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search" class="form-control">
+    </div>
+
+    
+
+</div>
+
+
+<div class="chatapi-windows ">
+
+
+
+
+</div>    </div>
+    <!-- END CONTAINER -->
+<!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+
+
+<!-- CORE JS FRAMEWORK - START --> 
+<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script> 
+<script src="assets/js/jquery.easing.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
+<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script> 
+<script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>  
+<script>window.jQuery||document.write('<script src="../assets/js/jquery-1.11.2.min.js"><\/script>');</script>
+<!-- CORE JS FRAMEWORK - END --> 
+
+
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START --> 
+
+<script src="assets/plugins/datatables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="assets/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+<script src="assets/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+<script src="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>
+<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END --> 
+
+
+<!-- CORE TEMPLATE JS - START --> 
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<script src="js/js.js"></script>
+
+<script type="text/javascript">
+var token;
+$(document).ready(function(e){
+
+    token=localStorage.getItem('token');
+
+    var adminFirstName=localStorage.getItem('first_name');
+    $('#adminFirstName').prepend(adminFirstName);
+
+    $("#file").click();
+    $('input[type=file]').on('change', prepareUpload);
+
+    $('#appChartCSVimport').click(function(e) {
+        var data = new FormData();
+        $.each(files, function(key, value)
+        {
+            data.append('file', value);
+        })
+        $.ajax({
+        
+            url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/csvcarsegment/', 
+            type: 'POST',
+            data: data,
+            cache: false,
+            //dataType: 'json',
+            processData: false, // Don't process the files
+            contentType: false,
+            headers: {
+                'Authorization':'Token '+token,
+            },
+            //async: false,
+            success: function(msg, status, xhr){
+                console.log('msg: '+msg+' \nstatus: '+status+' \nxhr: '+xhr);
+                alert(msg.detail);
+                //window.location.reload();
+                
+            },
+            error: function(xhr,status,error){
+                console.log(xhr+status+error);
+            }
+        });
+    });
+    
+
+    $.ajax({
+        
+        url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/carmodel/', 
+        type: 'GET',
+        headers: {
+            'Authorization':'Token '+token,
+        },
+        success: function(json){
+            console.log(json);
+            for (var i=0; i <json.length; i++) {
+                
+                tr = $('<tr/>');
+                tr.append("<td>" + (i+1) + ".</td>");
+                tr.append("<td>" + json[i].vehicle_manufacturer + "</td>");
+                tr.append("<td>" + json[i].car_segment + "</td>");
+                tr.append("<td>" + json[i].vehicle_model + "</td>");
+                tr.append("<td>" + json[i].fuel + "</td>");
+                tr.append("<td>" + json[i].product[0].capacity + "</td>");
+                tr.append("<td>" + json[i].product[0].brand__name + "</td>");
+                tr.append("<td>" + json[i].product[0].product + "</td>");
+                tr.append("<td>" + json[i].product[0].warranty + "</td>");
+               // tr.append(" </tbody></table>");
+                
+                
+                $('#applicationChartTableData').append(tr);
+            }  
+                                                     
+        },
+        error: function(xhr,status,error){
+            console.log(xhr+status+error);
+        }
+    });
+
+    getPagination('#applicationChartTableData');
+
+
+});
+    var files;
+    function prepareUpload(event){
+        files = event.target.files;
+    }
+</script> 
+<!-- END CORE TEMPLATE JS - END --> 
+
+
+<!-- General section box modal start -->
+<div class="modal" id="section-settings" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog animated bounceInDown">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Section Settings</h4>
+            </div>
+            <div class="modal-body">
+
+                Body goes here...
+
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+                <button class="btn btn-success" type="button">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal end -->
+</body>
+</html>
+
+
+

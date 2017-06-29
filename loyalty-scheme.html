@@ -1,896 +1,336 @@
-
 <!DOCTYPE html>
 <html class=" ">
-    <head>
-        <!-- 
+
+<head>
+    <!-- 
          * @Package: Complete Admin - Responsive Theme
          * @Subpackage: Bootstrap
          * @Version: 2.2
          * This file is part of Complete Admin Theme.
         -->
 
-        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-        <meta charset="utf-8" />
-        <title>LivGuard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>LivGuard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-57-precomposed.png">
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114-precomposed.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72-precomposed.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144-precomposed.png">
+    <!-- For iPad Retina display -->
+
+
+
+
+    <!-- CORE CSS FRAMEWORK - START -->
+    <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS FRAMEWORK - END -->
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+
+    <link href="assets/plugins/datatables/css/jquery.dataTables.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END -->
+
+
+    <!-- CORE CSS TEMPLATE - START -->
+    <!-- <link href="assets/css/dealers-purchase-records.css" rel="stylesheet" type="text/css"/> -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- CORE CSS TEMPLATE - END -->
+    <style type="text/css">
+        .Banner {
+            height: 233px;
+            width: 410px;
+            margin-left: -15px !important;
+            border-bottom: 1px solid #606060;
+            background-size: 100% 100%;
+            cursor: pointer;
+        }
         
-        <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />    <!-- Favicon -->
-        <link rel="apple-touch-icon-precomposed" href="../assets/images/apple-touch-icon-57-precomposed.png">	<!-- For iPhone -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/images/apple-touch-icon-114-precomposed.png">    <!-- For iPhone 4 Retina display -->
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/apple-touch-icon-72-precomposed.png">    <!-- For iPad -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/apple-touch-icon-144-precomposed.png">    <!-- For iPad Retina display -->
-
-
-
-
-        <!-- CORE CSS FRAMEWORK - START -->
-        <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/plugins/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" type="text/css"/>
-        <!-- CORE CSS FRAMEWORK - END -->
-
-        <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START --> 
+        td,
+        th,
+        i,
+        span {
+            text-align: center;
+        }
         
+        .tab-content.primary {
+            border: none !important;
+        }
         
-<link href="assets/plugins/datatables/css/jquery.dataTables.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="assets/plugins/datatables/extensions/TableTools/css/dataTables.tableTools.min.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="assets/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
+        .tab-content {
+            border: none !important;
+            padding: 0px !important;
+        }
+    </style>
+    <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#headerData").load("header.html");
+        });
+    </script>
+</head>
+<!-- END HEAD -->
 
-        <!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - END --> 
-
-
-        <!-- CORE CSS TEMPLATE - START -->
-        <!-- <link href="assets/css/dealers-purchase-records.css" rel="stylesheet" type="text/css"/> -->
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
-        <!-- CORE CSS TEMPLATE - END -->
-        <style type="text/css">
-            .Banner{
-                height: 233px;width:410px;margin-left:-15px !important;border-bottom: 1px solid #606060;background-size: 100% 100%;cursor:pointer;
-            }
-            td,th,i,span{
-                text-align: center;
-            }
-            .tab-content.primary {
-                border: none !important;
-            }
-            .tab-content {
-                border: none !important;
-                padding: 0px !important;
-            }
-        </style>
-        <!-- <link href="assets/css/index-style.css" rel="stylesheet" type="text/css"/> -->
-       
-   
-
-    </head>
-    <!-- END HEAD -->
-
-    <!-- BEGIN BODY -->
-    <body class=" "><!-- START TOPBAR -->
-<div class='page-topbar '>
-    <div class='logo-area'>
-
-    </div>
-    <div class='quick-area'>
-        <div class='pull-left'>
-            <ul class="info-menu left-links list-inline list-unstyled">
-                <li class="sidebar-toggle-wrap">
-                    <a href="#" data-toggle="sidebar" class="sidebar_toggle">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>      
-        <div class='pull-right'>
-            <ul class="info-menu right-links list-inline list-unstyled">
-                <li class="profile">
-                    <a href="#" data-toggle="dropdown" class="toggle">
-                    <!--    <img src="../data/profile/profile.jpg" alt="user-image" class="img-circle img-inline"> -->
-                        <span id="adminFirstName"> <i class="fa fa-angle-down"></i></span>
-                    </a>
-                    <ul class="dropdown-menu profile animated fadeIn">
-                    <!--    <li>
-                            <a href="#settings">
-                                <i class="fa fa-wrench"></i>
-                                Settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#profile">
-                                <i class="fa fa-user"></i>
-                                Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#help">
-                                <i class="fa fa-info"></i>
-                                Help
-                            </a>
-                        </li>  -->
-                        <li class="last">
-                            <a href="admin-login.html">
-                                <i class="fa fa-lock"></i>
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>           
-        </div>      
-    </div>
-
-</div>
-<!-- END TOPBAR -->
-<!-- START CONTAINER -->
-<div class="page-container row-fluid container-fluid">
-
-    <!-- SIDEBAR - START -->
-
-<div class="page-sidebar ">
-
-    <!-- MAIN MENU - START -->
-    <div class="page-sidebar-wrapper" id="main-menu-wrapper"> 
-        <ul class='wraplist'>   
-                    <li class="" style="padding-top: 40px;"> 
-                    <a href="home.html">
-                    <img src="assets/images/home.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 15px;"> Home</span>
-                        </a>
-                    </li>
-                    <li class="" > 
-                    <a href="dealers-purchase-records.html">
-                    <img src="assets/images/dealers-purchase-records.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 15px;"> Dealers & Purchase Records</span>
-                        </a>
-                    </li>
-                    <li class=""  >
-                    <a href="customer-product-warranty-list.html">
-                    <img src="assets/images/customer-product-warranty-list.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 14px;"> Customer & Product Warranty</span>
-                        </a>
-                    </li>
-                    <li class="" > 
-                    <a href="notifications.html">
-                    <img src="assets/images/notifications.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 15px;">Send Notifications</span>
-                        </a>
-                    </li>
-                    <li class="open" > 
-                    <a href="loyalty-scheme.html">
-                    <img src="assets/images/loyalty-scheme.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 15px;"> Loyalty Scheme</span>
-                        </a>
-                    </li>
-                    <li class="">
-                    <a href="application-chart.html">
-                    <img src="assets/images/application-chart.png" style="padding-left: 5px;">
-                    <span class="title" style="padding-left: 15px;"> Application Chart</span>
-                        </a>
-                    </li>
-        </ul>
-
-
-
-    </div>
-    <!-- MAIN MENU - END -->
-
-
-
-</div>
-<!--  SIDEBAR - END -->
+<body class=" ">
+    <div id="headerData"></div>
     <!-- START CONTENT -->
-<section id="main-content" class=" ">
-    <section class="wrapper main-wrapper row" style=''>
-    <div class="clearfix"></div>
-    <!-- MAIN CONTENT AREA STARTS -->
-    
+    <section id="main-content" class=" ">
+        <section class="wrapper main-wrapper row">
+            <div class="clearfix"></div>
+            <!-- MAIN CONTENT AREA STARTS -->
 
-<div class="col-lg-12">
-    <section class="box ">
-          
-            <div class="content-body">    <div class="row">
+            <div class="col-lg-12">
+                <section class="box ">
+                    <div class="content-body">
+                        <div class="row">
+                            <div class="col-md-12"><br>
+                                <center>
+                                    <ul class="nav nav-tabs primary" style="display: inline-block !important;" id="myTab">
+                                        <li class="active">
+                                            <a href="#upload-schemes" data-toggle="tab" style="color: #4F4F4F ;">Upload Schemes Banner</a>
+                                        </li>
+                                        <li>
+                                            <a href="#loyalty-points" data-toggle="tab" style="color: #4F4F4F ;">Loyalty Points Per Product</a>
+                                        </li>
+                                    </ul>
+                                </center>
 
-            <!-- Horizontal - start -->
-                                <div class="col-md-12"><br>
+                                <div class="tab-content primary">
+                                    <div class="tab-pane fade in active" id="upload-schemes"><br>
 
-                <center>    <ul class="nav nav-tabs primary" style="display: inline-block !important;" id="myTab">
-                        <li class="active">
-                            <a href="#upload-schemes" data-toggle="tab" style="color: #4F4F4F ;">
-                                Upload Schemes Banner
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#loyalty-points" data-toggle="tab" style="color: #4F4F4F ;">
-                            Loyalty Points Per Product
-                            </a>
-                        </li>
-                    <!--    <li>
-                            <a href="#levels-bonus" data-toggle="tab" style="color: #4F4F4F ;">
-                            Levels & Bonus
-                            </a>
-                        </li> -->
-                    </ul></center>
+                                    </div>
+                                    <div class="tab-pane fade" id="loyalty-points">
+                                        <div class="actions panel_actions pull-right row"><br>
+                                            <a href="#myModal3" data-toggle="modal" class="btn btn-success" style="height: 35px;width: 120px;color:#ffffff;font-size: 16px;"> Add New</a>
+                                        </div><br><br>
+                                        <center>
+                                            <table id="example1" class="table table-bordered dt-responsive display" style="table-layout: fixed; width: 700px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product Name</th>
+                                                        <th>Loyalty points</th>
+                                                        <th>Warranty</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="loyalty_points_table_data">
 
-                    <div class="tab-content primary">
-                        <div class="tab-pane fade in active" id="upload-schemes"><br>
-               
-
+                                                </tbody>
+                                            </table>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-
-                        <div class="tab-pane fade" id="loyalty-points">
-                       
-                        <div class="actions panel_actions pull-right row"><br>
-                            <a href="#myModal3" data-toggle="modal" class="btn" style="height: 40px;width: 120px;background-color: #EB5757;color:#ffffff;font-size: 16px;"><img src="assets/images/notifications.png"> Add New</a>
-                        </div><br><br>
-                                
-                    <center>    <table id="example1" class="table table-bordered dt-responsive display" style="table-layout: fixed; width: 700px;">
-                                    <thead>
-                                        <tr>
-                                            <th>Product Name</th>
-                                            <th>Loyalty points</th>
-                                            <th>Warranty</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-
-                                    
-
-                                    <tbody id="loyalty_points_table_data">
-                                        
-                                        </tbody>
-                                        </table></center>
-                        </div>
-                 <!--        <div class="tab-pane fade" id="levels-bonus">
-
-                       <div class="actions panel_actions pull-right"><br>
-                            <a href="#myModal" data-toggle="modal" class="btn" style="height: 34px;width: 134px;background-color: #EB5757;color:#ffffff;font-size: 16px;"><img src="addNewNotification.png"> Add New</a>
-                        </div><br><br>
-
-                            <table id="" class="table table-bordered table-condensed dt-responsive display" style="table-layout: fixed; width: 700px;">
-                                    <thead>
-                                        <tr>
-                                            <th>Level</th>
-                                            <th>Bonus</th>
-                                            <th>Expiry Date</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="levels_bonus_table_data">
-                                   
-
-                                        </tbody>
-                                        </table>
-
-                        </div>  
-
-                    </div>-->
-
-                </div>
-                </div>
-                </div>
+                    </div>
                 </section>
-                </div>
+            </div>
 
-<!-- MAIN CONTENT AREA ENDS -->
+            <!-- MAIN CONTENT AREA ENDS -->
+        </section>
     </section>
-    </section>
-    <!-- END CONTENT -->
-    <div class="page-chatapi hideit">
-
-    <div class="search-bar">
-        <input type="text" placeholder="Search" class="form-control">
-    </div>
-
-  
-
-</div>
-
-
-    </div>
+    <input type="hidden" value="loyalty" id="page_type">
     <!-- END CONTAINER -->
-<!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
+    <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
 
-<!-- CORE JS FRAMEWORK - START --> 
-<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script> 
-<script src="assets/js/jquery.easing.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>  
-<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script> 
-<script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>  
-<script>window.jQuery||document.write('<script src="../assets/js/jquery-1.11.2.min.js"><\/script>');</script>
-<!-- CORE JS FRAMEWORK - END --> 
-
-
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START --> 
-
-<script src="assets/plugins/datatables/js/jquery.dataTables.min.js" type="text/javascript"></script>
-<script src="assets/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
-<script src="assets/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
-<script src="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>
-<!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - END --> 
-
-<script type="text/javascript">
-var files,token;
-function prepareUpload(event){
-    files = event.target.files;
-}
-$(document).ready(function(){
-
-    token=localStorage.getItem('token');
-
-    var adminFirstName=localStorage.getItem('first_name');
-    $('#adminFirstName').prepend(adminFirstName);
-
-    $('input[type=file]').on('change', prepareUpload);
-
-    $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-            localStorage.setItem('activeLoyaltySchemeTab', $(e.target).attr('href'));
-        });
-        var activeLoyaltySchemeTab = localStorage.getItem('activeLoyaltySchemeTab');
-        if(activeLoyaltySchemeTab){
-            $('#myTab a[href="' + activeLoyaltySchemeTab + '"]').tab('show');
-        }
-
-    /*    var date_input=$('#expirydate1'); //our date input has the name "date"
-        var container=$('#myModal form ').length>0 ? $('#myModal form ').parent() : "body";
-        date_input.datepicker({
-            dateFormat: 'yyyy-mm-dd',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        })   */
-
-        $.ajax({
-                    url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/offerloyalty/',
-                    type: 'GET',
-                   
-                    headers: {
-                        'Authorization':'Token '+token,
-                    },
-                    success: function(msg, status, xhr){
-                        console.log('msg: '+msg+' \nstatus: '+status+' \nxhr: '+xhr);
-
-                            var markup2='<section class="col-lg-6"  style="border: 1px solid #606060;border-radius: 4px;height:265px;width: 412px;margin-top:40px;margin-left: 40px;background-color:#EEEEEE">'+
-                                '<img src="assets/images/addImage.png" style="display: block;margin-top: 110px !important;cursor:pointer;" id="addBanner1" class="addImage" data-toggle="modal" data-target="#myModal">'+
-                                '</section>';
-                      
-
-                                    $('#upload-schemes').append(markup2);
-                                    var NoOfSchemes=msg.length;
-                            for (var i=0; i <msg.length; i++) {
-
-                            var markup1 ='<section class="col-lg-6"  style="border: 1px solid #606060;border-radius: 4px;height:265px;width: 412px;margin-top:40px;margin-left: 40px;background-color:#EEEEEE">'+
-              
-                                '<div class="col-lg-12 Banner"  id="Banner'+msg[i].id+'" style="background-image:url('+msg[i].small_image+') ;"onclick=modalFunction2() data-id="'+msg[i].id+'" data-level1="'+msg[i].loyalty_point+'" data-bonus1="'+msg[i].offer_loyalty+'" data-expirydate1="'+msg[i].expiry_timestamp.slice(0,10)+'" data-details1="'+msg[i].offer_detail+'" data-toggle="modal" data-target="#myModal2"  >'+
-                                '</div>'+
-                                '<div style="padding-top:10px !important;">'+
-                                '<p  style="color:black;"> <b>Offer Expiry: </b>'+msg[i].expiry_timestamp.slice(0,10)+'</p></div>'+
-                                '</section>';        
-
-                            $('#upload-schemes').append(markup1);}
-                        },
-                    error: function(xhr,status,error){
-                      console.log(xhr+status+error);
-                    }
-                });
-//<i id="removeBanner1" class="fa fa-times" onclick="deleteScheme('+msg[i].id+')"></i>
-
-        $('#offerLoyaltySubmitButton').click(function(e) {
-
-            e.preventDefault();
-            var loyalty_point = $("#level").val();
-            var offer_loyalty = $("#bonus").val();
-            var offer_detail = $("#details").val();
-            var expiry_timestamp = $("#expiryDate").val();
-            var data = new FormData();
-            $.each(files, function(key, value)
-            {
-                data.append('file', value);
-            })
-            data.append('loyalty_point', loyalty_point);
-            data.append('offer_loyalty', offer_loyalty);
-            data.append('offer_detail', offer_detail);
-            data.append('expiry_timestamp', expiry_timestamp);
-            
-
-            $.ajax({
-                type: 'POST',
-                url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/uploadofferloyalty/',
-                data: data,
-                cache: false,
-                //dataType: 'json',
-                processData: false, // Don't process the files
-                contentType: false,
-                headers: {
-                            'Authorization':'Token '+token,
-                        },
-                //async: false,
-                //processData:false,
-                success: function(msg, status, xhr) {
-                    console.log('msg,status,xhr',msg,status,xhr);
-                    //window.location.reload();
-                    //returnValue = msg;
-                },
-                error: function(xhr,status,error){
-                    console.log(xhr+status+error);
-                }
-
-            });
-        });
-
-
-        $('#updateOfferLoyaltySubmitButton').click(function(e) {
-
-            e.preventDefault();
-            var id = $("#id1").val();
-            var loyalty_point = $("#level1").val();
-            var offer_loyalty = $("#bonus1").val();
-            var offer_detail = $("#details1").val();
-            var expiry_timestamp = $("#expiryDate1").val();
-            var data = new FormData();
-        /*    $.each(files, function(key, value)
-            {
-                data.append('file', value);
-            })   */
-            data.append('loyalty_point', loyalty_point);
-            data.append('offer_loyalty', offer_loyalty);
-            data.append('offer_detail', offer_detail);
-            data.append('expiry_timestamp', expiry_timestamp);
-           
-
-            $.ajax({
-                type: 'PUT',
-                url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/uploadofferloyalty/'+id+'/',
-                data: data,
-                cache: false,
-                //dataType: 'json',
-                processData: false, // Don't process the files
-                contentType: false,
-                headers: {
-                            'Authorization':'Token '+token,
-                        },
-                //async: false,
-                //processData:false,
-                success: function(msg, status, xhr) {
-                    console.log('msg,status,xhr',msg,status,xhr);
-                    window.location.reload();
-                    //returnValue = msg;
-                },
-                error: function(xhr,status,error){
-                    console.log(xhr+status+error);
-                }
-
-            });
-        });
-
-
-        $('#productLoyaltySubmitButton').click(function(e) {
-
-            e.preventDefault();
-            var brand = $("#brand").val();
-            var product = $("#prdName").val();
-            var loyalty_point = $("#loyPoints").val();
-            var warranty = $("#warranty").val();
-        //    var warranty_month = $("#warrMonth").val();
-        //    var warranty_year = $("#warrYear").val();
-            var capacity = $("#capacity").val();
-            /*var data = {
-                            'brand':brand,
-                            'loyalty_point':loyalty_point,
-                            'product':product,
-                            'warranty':warranty,
-                            'warranty_year':warranty_year,
-                            'warranty_month':warranty_month,
-                            'capacity':capacity
-                        };*/
-       
-            $.ajax({
-                type: 'POST',
-                url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/productloyalty/',
-                dataType: "json",
-                //async: false,
-                data:JSON.stringify ({
-                                            'brand':brand,
-                                            'loyalty_point':loyalty_point,
-                                            'product':product,
-                                            'warranty':warranty,
-                                        //    'warranty_year':warranty_year,
-                                        //    'warranty_month':warranty_month,
-                                            'capacity':capacity
-                                        }),
-                //processData: false, // Don't process the files
-                headers: {
-                            'Authorization':'Token '+token,
-                        //    'Content-Type':'application/json'
-                        },
-               
-                success: function(msg, status, xhr) {
-                    console.log('msg,status,xhr',msg,status,xhr);
-                    //window.location.reload();
-                    //returnValue = msg;
-                },
-                error: function(xhr,status,error){
-                    console.log(xhr+status+error);
-                }
-
-            });
-        });
-
-
-        $('#updateProductLoyaltySubmitButton').click(function(e) {
-
-            e.preventDefault();
-            var id = $("#id2").val();
-            var product = $("#prdName1").val();
-            var loyalty_point = $("#loyPoints1").val();
-            var warranty_month = $("#warrMonth1").val();
-            var warranty_year = $("#warrYear1").val();
-        //    var data = new FormData();
-        /*    $.each(files, function(key, value)
-            {
-                data.append('file', value);
-            })*/
-        /*    data.append('loyalty_point', loyalty_point);
-            data.append('product', product);
-            data.append('warranty_month', warranty_month);
-            data.append('warranty_year', warranty_year);*/
-            
-
-            $.ajax({
-                type: 'PUT',
-                url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/productloyalty/'+id+'/',
-                data:JSON.stringify ( {
-                            'loyalty_point':loyalty_point,
-                            'product':product,
-                        //    'warranty':warranty,
-                            'warranty_year':warranty_year,
-                            'warranty_month':warranty_month,
-                         //   'capacity':capacity
-                     }),
-                //cache: false,
-                //dataType: 'json',
-                //processData: false, // Don't process the files
-                dataType: 'json',
-                headers: {
-                            'Authorization':'Token '+token,
-                        //    'Content-Type':'application/json'
-                        },
-             
-                success: function(msg, status, xhr) {
-                    console.log('msg,status,xhr',msg,status,xhr);
-                    //window.location.reload();
-                    //returnValue = msg;
-                },
-                error: function(xhr,status,error){
-                    console.log(xhr+status+error);
-                }
-
-            });
-        });
-
-    
-    window.onload=productLoyaltyData();
-
-
-});
-
-function productLoyaltyData(){    
-                $.ajax({
-                    url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/productloyalty/',
-                    type: 'GET',
-                   
-                    headers: {
-                        'Authorization':'Token '+token,
-                    },
-                    success: function(json){
-                            for (var i=0; i <json.length; i++) {
-                                tr = $('<tr/>');
-                                tr.append("<td>" + json[i].product + "</td>");
-                                tr.append("<td>" + json[i].loyalty_point + "</td>");
-                                tr.append("<td>" +json[i].warranty_year+" year "+json[i].warranty_month +" months</td>");
-                                tr.append("<td><span onclick=deleteProductLoyalty("+json[i].id+") style='color: black;float:right;padding-left:10px;padding-right:10px;cursor:pointer;'><i class='fa fa-trash fa-5x'></i></span><span  onclick=modalFunction4() data-id='"+json[i].id+"'data-product1='"+json[i].product+"' data-loyaltypoint1='"+json[i].loyalty_point+"' data-warryear1='"+json[i].warranty_year+"' data-warrmonth1='"+json[i].warranty_month+"'  data-toggle='modal' data-target='#myModal4' style='color: black;float:right;cursor:pointer;'><i class='fa fa-pencil fa-5x'></i></span></td>");
-                                $('#loyalty_points_table_data').append(tr);
-
-                            }                                           
-                        },
-                    error: function(xhr,status,error){
-                      console.log(xhr+status+error);
-                    }
-                });
-    }
-
-function modalFunction1(){
-    //alert("0");;
-                     $("#myModal").on("show.bs.modal", function (event){
-                        $('#myModal').find('input#id').val($(event.relatedTarget).data('id'));
-                        $('#myModal').find('input#level').val($(event.relatedTarget).data('level'));
-                        $('#myModal').find('input#bonus').val($(event.relatedTarget).data('bonus'));
-                        $('#myModal').find('input#expiryDate').val($(event.relatedTarget).data('date'));
-
-                     });
-                     
-        }
-
-
-function deleteProductLoyalty(id){
-    var r = confirm("Are you sure you want delete this Loyalty Point?");
-        if (r == true) {
-            $.ajax({
-                
-                    url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/productloyalty/'+id+'/', 
-                    type: 'DELETE',
-                    headers: {
-                        'Authorization':'Token '+token,
-                    },
-                    success: function(msg, status, xhr){
-                        console.log('msg: '+msg+' \nstatus: '+status+' \nxhr: '+xhr);
-                        window.location.reload();
-                    },
-                    error: function(xhr,status,error){
-                        console.log(xhr+status+error);
-                    }
-                });
-        }
-}
-
-    function deleteScheme(id){
-        $.ajax({
-        
-            url: 'http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/deleteproductbanner/'+id+'/', 
-            type: 'DELETE',
-            headers: {
-                'Authorization':'Token '+token,
-            },
-            success: function(msg, status, xhr){
-                console.log('msg: '+msg+' \nstatus: '+status+' \nxhr: '+xhr);
-                window.location.reload();
-            },
-            error: function(xhr,status,error){
-                console.log(xhr+status+error);
-            }
-        });
-    }
-function modalFunction2(){
-    //alert("0");;
-                     $("#myModal2").on("show.bs.modal", function (event){
-                        $('#myModal2').find('input#id1').val($(event.relatedTarget).data('id'));
-                        $('#myModal2').find('input#level1').val($(event.relatedTarget).data('level1'));
-                        $('#myModal2').find('input#bonus1').val($(event.relatedTarget).data('bonus1'));
-                        $('#myModal2').find('input#details1').val($(event.relatedTarget).data('details1'));
-                        $('#myModal2').find('input#expiryDate1').val($(event.relatedTarget).data('expirydate1'));
-                        //alert(val($(event.relatedTarget).data('file1')));
-                        //$('#myModal2').find('input#blah').css('src',$().attr('data-img-url'));
-                        //$('#myModal2').find('img#blah1').css('src',$(event.relatedTarget).attr('data-file1'));
-                       // $('#myModal2 img#blah1').attr('src', $(event.relatedTarget).attr('data-file1'));
-
-                     });
-                     
-        }
-        function modalFunction4(){
-    //alert("0");;
-                     $("#myModal4").on("show.bs.modal", function (event){
-                        $('#myModal4').find('input#id2').val($(event.relatedTarget).data('id'));
-                        $('#myModal4').find('input#prdName1').val($(event.relatedTarget).data('product1'));
-                        $('#myModal4').find('input#loyPoints1').val($(event.relatedTarget).data('loyaltypoint1'));
-                        $('#myModal4').find('input#warrYear1').val($(event.relatedTarget).data('warryear1'));
-                        $('#myModal4').find('input#warrMonth1').val($(event.relatedTarget).data('warrmonth1'));
-                        //alert(val($(event.relatedTarget).data('file1')));
-                        //$('#myModal2').find('input#blah').css('src',$().attr('data-img-url'));
-                        //$('#myModal2').find('img#blah1').css('src',$(event.relatedTarget).attr('data-file1'));
-                       // $('#myModal2 img#blah1').attr('src', $(event.relatedTarget).attr('data-file1'));
-
-                     });
-                     
-        }
-</script>
-
-
-<!-- CORE TEMPLATE JS - START --> 
-<!-- <script src="../assets/js/scripts.js" type="text/javascript"></script>  -->
-<!-- END CORE TEMPLATE JS - END --> 
-
-
-<!-- General section box modal start -->
-
-<div aria-hidden="true"  role="dialog" tabindex="-1" id="myModal4" class="modal fade" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 class="modal-title" style="text-align: center;">Update Loyalty Points per Product</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <input type="hidden" class="form-control" id="id2" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="prdName1" class="form-label">Product Name</label>
-                                        <input type="text" class="form-control" id="prdName1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loyPoints1" class="form-label">Loyalty Points</label>
-                                        <input type="text" class="form-control" id="loyPoints1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="warrYear1" class="form-label">Warranty Year</label>
-                                        <input type="text" class="form-control" id="warrYear1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="warrMonth1" class="form-label">Warranty Month</label>
-                                        <input type="text" class="form-control" id="warrMonth1" >
-                                    </div>
-                                <!--    <div class="form-group">
-                                        <label for="details" class="form-label">Comments</label>
-                                        <input type="text" class="form-control" id="details" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="file" class="form-label">Image File</label>
-                                        <input type="file" class="form-control" id="file" >
-                                    </div>-->
-                                    <br>
-                                    
-                                    <button type="button" id="updateProductLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-<div aria-hidden="true"  role="dialog" tabindex="-1" id="myModal3" class="modal fade" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 class="modal-title" style="text-align: center;">Loyalty Points per Product</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="brand" class="form-label">Brand</label>
-                                        <input type="text" class="form-control" id="brand" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="prdName" class="form-label">Product Name</label>
-                                        <input type="text" class="form-control" id="prdName" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="loyPoints" class="form-label">Loyalty Points</label>
-                                        <input type="text" class="form-control" id="loyPoints" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="warranty" class="form-label">Warranty</label>
-                                        <input type="text" class="form-control" id="warranty" >
-                                    </div>
-                            <!--        <div class="form-group">
-                                        <label for="warrYear" class="form-label">Warranty Year</label>
-                                        <input type="text" class="form-control" id="warrYear" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="warrMonth" class="form-label">Warranty Month</label>
-                                        <input type="text" class="form-control" id="warrMonth" >
-                                    </div> -->
-                                    <div class="form-group">
-                                        <label for="capacity" class="form-label">Capacity</label>
-                                        <input type="text" class="form-control" id="capacity" >
-                                    </div>
-                                <!--    <div class="form-group">
-                                        <label for="details" class="form-label">Comments</label>
-                                        <input type="text" class="form-control" id="details" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="file" class="form-label">Image File</label>
-                                        <input type="file" class="form-control" id="file" >
-                                    </div>-->
-                                    <br>
-                                    
-                                    <button type="button" id="productLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div aria-hidden="true"  role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 class="modal-title" style="text-align: center;">Offer Loyalty - Schemes</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    
-                                    <div class="form-group">
-                                        <label for="level" class="form-label">Loyalty Points</label>
-                                        <input type="text" class="form-control" id="level" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bonus" class="form-label">Bonus Points</label>
-                                        <input type="text" class="form-control" id="bonus" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="expiryDate" class="form-label">Offer Expiry Date</label>
-                                        <input type="text" class="form-control" id="expiryDate" placeholder="yyyy-mm-dd" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="details" class="form-label">Comments</label>
-                                        <input type="text" class="form-control" id="details" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="file" class="form-label">Image File</label>
-                                        <input type="file" class="form-control" id="file" >
-                                    </div>
-                                    <br>
-                                    
-                                    <button type="button" id="offerLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div aria-hidden="true"  role="dialog" tabindex="-1" id="myModal2" class="modal fade" style="display: none;">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
-                                <h4 class="modal-title" style="text-align: center;">Update Offer Loyalty - Schemes</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <input type="hidden" class="form-control" id="id1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="level" class="form-label">Loyalty Points</label>
-                                        <input type="text" class="form-control" id="level1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bonus" class="form-label">Bonus Points</label>
-                                        <input type="text" class="form-control" id="bonus1" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="expiryDate1" class="form-label">Offer Expiry Date</label>
-                                        <input type="text" class="form-control date1" id="expiryDate1"  placeholder="yyyy-mm-dd">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="details" class="form-label">Comments</label>
-                                        <input type="text" class="form-control" id="details1" >
-                                    </div>
-                                <!--    <div class="form-group">
-                                        <label for="file" class="form-label">Image File</label>
-                                        <input type="file" class="form-control" id="file" >
-                                    </div>  -->
-                                    <br>
-                                    
-                                    <button type="button" id="updateOfferLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <!--        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <!-- CORE JS FRAMEWORK - START -->
+    <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>
     <script>
-      $( function() {
-        $( "#expiryDate" ).datepicker({ dateFormat: "yy-mm-dd" });
-        $( ".date1" ).datepicker({ dateFormat: "yy-mm-dd" });
-      } );
-    </script>-->
-<!-- modal end -->
+        window.jQuery || document.write('<script src="../assets/js/jquery-1.11.2.min.js"><\/script>');
+    </script>
+    <!-- CORE JS FRAMEWORK - END -->
+
+
+    <!-- OTHER SCRIPTS INCLUDED ON THIS PAGE - START -->
+
+    <script src="assets/plugins/datatables/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/datatables/extensions/Responsive/bootstrap/3/dataTables.bootstrap.js" type="text/javascript"></script>
+
+    <!-- CORE TEMPLATE JS - START -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script src="assets/js/config.js" type="text/javascript"></script>
+    <script src="assets/js/loyalty-init.js" type="text/javascript"></script>
+    <!-- END CORE TEMPLATE JS - END -->
+    <!-- General section box modal start -->
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="myModal4" class="modal fade" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <h4 class="modal-title" style="text-align: center;">Update Loyalty Points per Product</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" id="id2">
+                        </div>
+                        <div class="form-group">
+                            <label for="prdName1" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="prdName1">
+                        </div>
+                        <div class="form-group">
+                            <label for="loyPoints1" class="form-label">Loyalty Points</label>
+                            <input type="text" class="form-control" id="loyPoints1">
+                        </div>
+                        <div class="form-group">
+                            <label for="warrYear1" class="form-label">Warranty Year</label>
+                            <input type="text" class="form-control" id="warrYear1">
+                        </div>
+                        <div class="form-group">
+                            <label for="warrMonth1" class="form-label">Warranty Month</label>
+                            <input type="text" class="form-control" id="warrMonth1">
+                        </div>
+                        <br>
+
+                        <button type="button" id="updateProductLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="myModal3" class="modal fade" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <h4 class="modal-title" style="text-align: center;">Loyalty Points per Product</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="brand" class="form-label">Brand</label>
+                            <input type="text" class="form-control" id="brand">
+                        </div>
+                        <div class="form-group">
+                            <label for="prdName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="prdName">
+                        </div>
+                        <div class="form-group">
+                            <label for="loyPoints" class="form-label">Loyalty Points</label>
+                            <input type="text" class="form-control" id="loyPoints">
+                        </div>
+                        <div class="form-group">
+                            <label for="warranty" class="form-label">Warranty</label>
+                            <input type="text" class="form-control" id="warranty">
+                        </div>
+                        <div class="form-group">
+                            <label for="capacity" class="form-label">Capacity</label>
+                            <input type="text" class="form-control" id="capacity">
+                        </div>
+                        <br>
+
+                        <button type="button" id="productLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <h4 class="modal-title" style="text-align: center;">Offer Loyalty - Schemes</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+
+                        <div class="form-group">
+                            <label for="level" class="form-label">Loyalty Points</label>
+                            <input type="text" class="form-control" id="level">
+                        </div>
+                        <div class="form-group">
+                            <label for="bonus" class="form-label">Bonus Points</label>
+                            <input type="text" class="form-control" id="bonus">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryDate" class="form-label">Offer Expiry Date</label>
+                            <input type="text" class="form-control" id="expiryDate" placeholder="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group">
+                            <label for="details" class="form-label">Comments</label>
+                            <input type="text" class="form-control" id="details">
+                        </div>
+                        <div class="form-group">
+                            <label for="file" class="form-label">Image File</label>
+                            <input type="file" class="form-control" id="file">
+                        </div>
+                        <br>
+
+                        <button type="button" id="offerLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div aria-hidden="true" role="dialog" tabindex="-1" id="myModal2" class="modal fade" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <h4 class="modal-title" style="text-align: center;">Update Offer Loyalty - Schemes</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="hidden" class="form-control" id="id1">
+                        </div>
+                        <div class="form-group">
+                            <label for="level" class="form-label">Loyalty Points</label>
+                            <input type="text" class="form-control" id="level1">
+                        </div>
+                        <div class="form-group">
+                            <label for="bonus" class="form-label">Bonus Points</label>
+                            <input type="text" class="form-control" id="bonus1">
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryDate1" class="form-label">Offer Expiry Date</label>
+                            <input type="text" class="form-control date1" id="expiryDate1" placeholder="yyyy-mm-dd">
+                        </div>
+                        <div class="form-group">
+                            <label for="details" class="form-label">Comments</label>
+                            <input type="text" class="form-control" id="details1">
+                        </div>
+                        <br>
+
+                        <button type="button" id="updateOfferLoyaltySubmitButton" class="btn" style="background-color: #EB5757;color:#ffffff;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
-
-
-

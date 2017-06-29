@@ -1,0 +1,119 @@
+<!-- HEADER SCRIPTS INCLUDED ON THIS PAGE - START -->
+<link href="assets/plugins/messenger/css/messenger.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="assets/plugins/messenger/css/messenger-theme-future.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="assets/plugins/messenger/css/messenger-theme-flat.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<!-- CORE CSS TEMPLATE - END -->
+
+<!-- START TOPBAR -->
+<div class='page-topbar '>
+    <div class='logo-area'>
+
+    </div>
+    <div class='quick-area'>
+        <div class='pull-left'>
+            <ul class="info-menu left-links list-inline list-unstyled">
+                <li class="sidebar-toggle-wrap">
+                </li>
+            </ul>
+        </div>
+        <div class='pull-right'>
+            <ul class="info-menu right-links list-inline list-unstyled">
+                <li class="profile">
+                    <a href="#" data-toggle="dropdown" class="toggle">
+                        <img src="assets/images/apple-touch-icon-57-precomposed.png" alt="user-image" class="img-circle img-inline">
+                        <span id="adminFirstName">Admin <i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul class="dropdown-menu profile animated fadeIn">
+                        <li class="last">
+                            <a href="index.html" id="logout"><i class="fa fa-lock"></i>Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-- END TOPBAR -->
+<!-- START CONTAINER -->
+<div class="page-container row-fluid container-fluid">
+    <!-- SIDEBAR - START -->
+    <div class="page-sidebar pagescroll" style="position: fixed !important;">
+
+        <!-- MAIN MENU - START -->
+        <div class="page-sidebar-wrapper" id="main-menu-wrapper">
+            <ul class='wraplist'>
+                <li class="open menu-class" id="home" style="padding-top: 40px;">
+                    <a href="home.html">
+                        <img src="assets/images/home.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 15px;"> Home</span>
+                    </a>
+                </li>
+                <li class="menu-class" id="dealer_purchase">
+                    <a href="dealers-purchase-records.html">
+                        <img src="assets/images/dealers-purchase-records.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 15px;"> Dealers & Purchase Records</span>
+                    </a>
+                </li>
+                <li class="menu-class" id="customer">
+                    <a href="customer-product-warranty-list.html">
+                        <img src="assets/images/customer-product-warranty-list.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 14px;"> Customer & Product Warranty</span>
+                    </a>
+                </li>
+                <li class="menu-class" id="notification">
+                    <a href="notifications.html">
+                        <img src="assets/images/notifications.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 15px;">Send Notifications</span>
+                    </a>
+                </li>
+                <li class="menu-class" id="loyalty">
+                    <a href="loyalty-scheme.html">
+                        <img src="assets/images/loyalty-scheme.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 15px;"> Loyalty Scheme</span>
+                    </a>
+                </li>
+                <li class="menu-class" id="chart">
+                    <a href="application-chart.html">
+                        <img src="assets/images/application-chart.png" style="padding-left: 5px;">
+                        <span class="title" style="padding-left: 15px;"> Application Chart</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- MAIN MENU - END -->
+</div>
+<!--  SIDEBAR - END -->
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<script src="assets/plugins/messenger/js/messenger.min.js" type="text/javascript"></script>
+<script src="assets/plugins/messenger/js/messenger-theme-future.js" type="text/javascript"></script>
+<script src="assets/plugins/messenger/js/messenger-theme-flat.js" type="text/javascript"></script>
+<script src="assets/js/messenger.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#logout').click(function(e) {
+            localStorage.removeItem('token');
+            localStorage.removeItem('activeLoyaltySchemeTab');
+        });
+
+        var page_type = $("#page_type").val();
+        $(".menu-class").removeClass("open");
+        if (page_type == "dealer_purchase") {
+            $("#dealer_purchase").addClass("open");
+        } else if (page_type == "home") {
+            $("#home").addClass("open");
+        } else if (page_type == "customer") {
+            $("#customer").addClass("open");
+        } else if (page_type == "notification") {
+            $("#notification").addClass("open");
+        } else if (page_type == "loyalty") {
+            $("#loyalty").addClass("open");
+        } else if (page_type == "chart") {
+            $("#chart").addClass("open");
+        }
+    })
+</script>

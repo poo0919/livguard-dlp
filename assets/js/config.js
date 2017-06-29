@@ -1,6 +1,10 @@
-var rootEndpoint = "http://api.bharatpay.co.in/v1/";
+var rootEndpoint = "http://dlpdevelopment-env.ap-south-1.elasticbeanstalk.com/v1/";
 var apiUrls = {
-	"users": rootEndpoint + "users/",
-	"login": rootEndpoint + "login/",
-	"inventory" : rootEndpoint + "inventory/", 
+    "adminlogin": rootEndpoint + "adminlogin/",
+    "getproductbanner": rootEndpoint + "getproductbanner/",
+    "deleteproductbanner": rootEndpoint + "deleteproductbanner/",
+    "createproductbanner": rootEndpoint + "createproductbanner/",
+    "admindealerlist": rootEndpoint + "admindealerlist/",
+    "productwarranty": rootEndpoint + "productwarranty/",
+    "productwarranty": rootEndpoint + "productwarranty/",
 }
